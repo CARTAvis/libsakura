@@ -177,8 +177,8 @@ bool CallAndTestResult(LIBSAKURA_SYMBOL(StatisticsResultFloat) const &ref,
 					EXPECT_TRUE(!std::isnan(result_accurate.*attr));
 				}
 			};
-	value_test(&decltype(result)::sum);
-	value_test(&decltype(result)::square_sum);
+	// value_test(&decltype(result)::sum);
+	// value_test(&decltype(result)::square_sum);
 
 	if ((!std::isnan(result.sum) && !std::isnan(result_accurate.sum)
 			&& result.sum != result_accurate.sum)
